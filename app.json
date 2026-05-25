@@ -2,6 +2,7 @@
   "expo": {
     "name": "PushToUnlock54",
     "slug": "PushToUnlock54",
+    "scheme": "pushtounlock54",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -16,14 +17,23 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "com.replock.pushtounlock54",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true
     },
+    "plugins": [
+      "./plugins/with-replock-accessibility"
+    ],
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "d10ee53f-b57e-4c70-8117-8dc3216e2625"
+      }
     }
   }
 }
